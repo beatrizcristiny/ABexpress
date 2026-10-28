@@ -1,34 +1,51 @@
-  arrumando a semântica
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/LoginPage.css">
-    <title>A&Bexpress</title>
+    <title>A&BExpress</title>
 </head>
+
 <body>
-    logo
-<h4>CENTRAL DE OPERAÇÕES</h4>
-<h1>Mais clareza para cada entrega.</h1>
-<h5>Controle sua frota, sua equipe e o fluxo de entregas com uma visão simples e organizada.</h5>
-<h6>Operação conectada</h6>
-<h6>v1.0 • Ambiente escolar</h6>
-<h4>ACESSO RESTRITO</h4>
-<h1>Olá, novamente.</h1>
-<h4>Entre para acessar o painel de operações.</h4>
-<h5>E-mail ou usuário</h5>
-<input type="email">ex.: camila.oliveira</input>
-<h5>Senha</h5>
-<input type="password">Digite sua senha</input>
-<a href="">Esqueci minha senha</a>
-<h4>Não foi possível entrar.</h4>
-<h4>Confira seu usuário e senha e tente novamente.</h4>
-<a href="">Entrar</a>
-<h6>Ambiente protegido para uso interno</h6>
+
+    <main class="login-page">
+
+        <p class="logo">A&B Express</p>
+
+        <h4>CENTRAL DE OPERAÇÕES</h4>
+        <h1>Mais clareza para cada entrega.</h1>
+        <p>Controle sua frota, sua equipe e o fluxo de entregas com uma visão simples e organizada.</p>
+        <p>Operação conectada</p>
+        <p>v1.0 • Ambiente escolar</p>
+
+        <h4>ACESSO RESTRITO</h4>
+        <h2>Olá, novamente.</h2>
+        <p>Entre para acessar o painel de operações.</p>
+
+        <form action="#" method="post">
+
+            <label for="usuario">E-mail ou usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="ex.: camila.oliveira">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+            <a href="#">Esqueci minha senha</a>
+
+            <div class="mensagem-erro" role="alert" hidden>
+                <strong>Não foi possível entrar.</strong>
+                <p>Confira seu usuário e senha e tente novamente.</p>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+        <p>Ambiente protegido para uso interno</p>
+
+    </main>
 
 </body>
+
 </html>
-
-
-                  
