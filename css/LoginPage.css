@@ -82,7 +82,17 @@ body{
     font-size: 12px;
     color: grey;
 }
+
+.login-login input::placeholder{
+
+    color: aqua;
+}
 .login-login label{
     font-size: 13px;
     margin-top: 10px;
+}
+
+#senha {
+
+    color: aqua;
 }
