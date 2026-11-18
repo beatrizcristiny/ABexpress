@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap' );
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', Arial, sans-serif;
+}
+
+
+ h1,h2,h3{
+    font-family: 'Manrope', sans-serif;
+}
+
+.menu-lateral{
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    border: solid 1px black;
+}
+.conteudo{
+    margin-left: 370px;
+}
+.circulo-usuario{
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 0px 10px;
+    background: linear-gradient(to bottom,#2563EB,#23477D);
+    transform: translateY(10px); 
+}
+.bc{
+   text-align: center;
+   margin: 0 auto;
+   font-size: 16px;
+   color: white;
+  
+}
+.usuario h2{
+    margin-top: -25px;
+    margin-left: 55px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.adm{
+    margin-left: 55px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.usuario{
+    background-color: rgb(218, 231, 255);
+    width: 220px;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+/* telas maiores q 1600*/
+@media (min-width: 1600px) {
+    .login-apresentacao h4{
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+    .login-apresentacao h1 {
+        font-size: 45px;
+        margin-right: 600px;
+        margin-bottom: 15px;
+    }
+    .login-apresentacao p{
+        font-size: 16px;
+        margin-right: 500px;
+    }
+    .login-login h4{
+        font-size: 12px;
+    }
+    .login-login h2{
+        font-size: 35px;
+    }
+    .login-login p{
+        font-size: 12px;
+    }
+    
+}
+/* para telas menores */
+@media (max-width: 768px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-apresentacao,
+    .login-login {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .login-apresentacao {
+        padding: 30px;
+    }
+
+    .login-apresentacao h4 {
+        margin-top: 50px;
+    }
+
+    .login-apresentacao .operacao {
+        margin-top: 40px;
+        padding-top: 0;
+    }
+
+    .login-login {
+        padding: 40px 25px;
+    }
+}
+
+/* pros celulares */
+@media (max-width: 400px) {
+
+    .login-apresentacao {
+        padding: 25px;
+    }
+
+    .login-apresentacao h1 {
+        font-size: 27px;
+    }
+
+    .login-login {
+        padding: 35px 20px;
+    }
+}
