@@ -1,93 +1,252 @@
-*{
-    padding: 0px;
-    margin: 0px;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap' );
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', Arial, sans-serif;
 }
-.login-page{
+
+
+ h1,h2,h3{
+    font-family: 'Manrope', sans-serif;
+}
+
+.login-page {
     display: flex;
     min-height: 100vh;
+    width: 100%;
 }
-.login-apresentacao{
+
+/* lado esqeurdo da tel */
+.login-apresentacao {
     background-color: #0A2341;
     width: 45%;
+    min-height: 100vh;
     padding: 40px;
-    color: rgb(255, 255, 255);
-    
-   
+    color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.login-apresentacao h4{
+.login-apresentacao h4 {
     color: #A6C5F7;
     font-size: 12px;
-    margin: 200px 0px 10px 0px;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
-.login-apresentacao h1{
-    font-size: 35px;
-    margin-right: 250px;
-    line-height: 38px;
 
+.login-apresentacao h1 {
+    font-size: clamp(28px, 2.5vw, 35px);
+    line-height: 1.15;
+    max-width: 420px;
 }
-.login-apresentacao span{
+
+.login-apresentacao span {
     color: #7FB0FF;
 }
-.login-apresentacao p{
-    font-size: 11px;
+
+.login-apresentacao p {
+    font-size: 13px;
     margin-top: 13px;
-    margin-right: 250px;
+    max-width: 420px;
     color: #A6C5F7;
+    line-height: 1.5;
 }
-.login-apresentacao .operacao{
-    margin-top: 100px;
+
+.login-apresentacao .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
 }
-.login-login{
+
+.login-apresentacao .operacao {
+    margin-top: auto;
+    padding-top: 40px;
+    font-size: 11px;
+}
+
+/* lado direito da tela */
+.login-login {
     background-color: #EEF8FF;
     width: 55%;
+    min-height: 100vh;
     padding: 40px;
-    color: rgb(0, 0, 0);
-   
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.login-login h4{
+
+.login-login h4,.login-login h2,.login-login > p,.login-login form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-login h4 {
     color: #6782AA;
     font-size: 10px;
-    margin-left: 150px;
-    margin-top: 150px;
+    margin-bottom: 12px;
 }
-.login-login h2{
-    font-size: 25px;
-    margin-left: 150px;
-    margin-bottom: 8px;
-    margin-top: 10px;
 
+.login-login h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
 }
-.login-login p{
+
+.login-login p {
     font-size: 12px;
-    margin-left: 150px;
     color: grey;
     margin-bottom: 10px;
 }
-.login-login form{
+
+.login-login form {
     display: grid;
-    margin-left: 150px;
-}
-.login-login input{
-    width: 300px;
-    padding: 7px;
-    margin-top: 10px;
-    border: 0.8px solid rgb(175, 175, 175);
-    border-radius: 5px;
-    font-size: 12px;
-    color: grey;
+    width: 100%;
+    max-width: 400px;
 }
 
-.login-login input::placeholder{
-    color: rgb(167, 172, 172);
-}
-.login-login label{
+.login-login input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 10px;
     font-size: 13px;
-    margin-top: 10px;
+    color: #333;
 }
 
+.login-login input::placeholder {
+    color: #999;
+}
+
+.login-login label {
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
+
+.login-login a {
+    font-size: 12px;
+    color: #6782AA;
+    text-decoration: none;
+    margin-top: 12px;
+    justify-self: end;
+}
+
+.login-login button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-login button:hover {
+    background-color: #173D68;
+}
+
+.login-login .p {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.mensagem-erro {
+    background-color: #ffe5e5;
+    color: #a00000;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.mensagem-erro p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+/* telas maiores q 1600*/
+@media (min-width: 1600px) {
+    .login-apresentacao h4{
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+    .login-apresentacao h1 {
+        font-size: 45px;
+        margin-right: 600px;
+        margin-bottom: 15px;
+    }
+    .login-apresentacao p{
+        font-size: 16px;
+        margin-right: 500px;
+    }
+    .login-login h4{
+        font-size: 12px;
+    }
+    .login-login h2{
+        font-size: 35px;
+    }
+    .login-login p{
+        font-size: 12px;
+    }
+    
+}
+/* para telas menores */
+@media (max-width: 768px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-apresentacao,
+    .login-login {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .login-apresentacao {
+        padding: 30px;
+    }
+
+    .login-apresentacao h4 {
+        margin-top: 50px;
+    }
+
+    .login-apresentacao .operacao {
+        margin-top: 40px;
+        padding-top: 0;
+    }
+
+    .login-login {
+        padding: 40px 25px;
+    }
+}
+
+/* pros celulares */
+@media (max-width: 400px) {
+
+    .login-apresentacao {
+        padding: 25px;
+    }
+
+    .login-apresentacao h1 {
+        font-size: 27px;
+    }
+
+    .login-login {
+        padding: 35px 20px;
+    }
+}
