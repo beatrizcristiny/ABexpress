@@ -28,39 +28,85 @@ body {
 }
 .circulo-usuario{
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    display: flex;
+    width: 38px;
+    height: 38px;
     align-items: center;
     justify-content: center;
-    margin: 60px 0px 0px 10px;
     background: linear-gradient(to bottom,#2563EB,#23477D);
-    transform: translateY(10px); 
+   
 }
 .bc{
    text-align: center;
-   margin: 0 auto;
    font-size: 16px;
    color: white;
+   padding-top: 8px;
   
 }
 .usuario h2{
-    margin-top: -25px;
-    margin-left: 55px;
-    font-size: 16px;
-    font-weight: 600;
-}
-.adm{
+   
     margin-left: 55px;
     font-size: 14px;
     font-weight: 600;
 }
+.adm{
+    margin-left: 55px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+
+}
 .usuario{
-    background-color: rgb(218, 231, 255);
+    background-color: #F4F4F4;
     width: 220px;
     height: 60px;
-    margin-left: 20px;
+    margin-left: 30px;
     border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    margin-top: 80px;
+}
+.menu{
+    margin-left: 30px;
+    font-size: 14px;
+    color: rgb(120, 119, 119);
+    font-weight: 600;
+    margin-top: 30px;
+}
+aside nav{
+    display: grid;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.card-ajuda{
+     background-color: #F4F4F4;
+    width: 220px;
+    height: 60px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border: 1px solid rgb(165, 165, 165);
+}
+.card-ajuda h2{
+    margin-left: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    
+}
+.card-ajuda h3{
+    margin-left: 55px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+}
+aside a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
 }
 /* telas maiores q 1600*/
 @media (min-width: 1600px) {
