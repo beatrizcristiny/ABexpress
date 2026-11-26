@@ -19,7 +19,7 @@ body {
 
 .logo{
   position: relative;
-  top: 5%;
+  top: 3%;
   left: 10%;
   width: 65%;
 
@@ -31,7 +31,39 @@ body {
     border: solid 1px rgb(161, 161, 161);    
 }
 .conteudo{
-    margin-left: 370px;
+    margin-left: 280px;
+    background-color: #F0F1F3;
+}
+.topo{
+    height: 60px;
+    border-bottom: 2px solid rgb(188, 188, 188);
+    background-color: white;
+    box-shadow: 1px 2px 8px rgba(145, 145, 145, 0.242);
+}
+.topo h2{
+    margin-left: 50px;  
+    font-size: 12px;        
+    padding-top: 22px;
+    font-weight: 500;
+    color: #AEAEAE;
+}
+.topo span{
+    color: #656464;
+    font-weight: 600;
+}
+.conteudo p{
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #717171;
+}
+.conteudo h1{
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #17263C;
+    margin-top: 8px;
 }
 .circulo-usuario{
     border-radius: 100%;
@@ -137,9 +169,7 @@ aside a{
     margin-left: 45px;
     font-size: 14px;
 }
-.conteudo{
-    background-color: #F0F1F3;
-}
+
 /* telas maiores q 1600*/
 @media (min-width: 1600px) {
     .login-apresentacao h4{
